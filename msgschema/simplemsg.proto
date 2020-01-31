@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package ollo;
+
+service GreeterS {
+
+rpc SayOllo(Request) returns (Response){}
+}
+message Request {
+ string name = 1;
+}
+message Response {
+ string fullGreet = 1;
+ }
+

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ protoc -I msgschema/ --go_out=plugins=grpc:ollo simplemsg.proto
